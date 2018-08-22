@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript" src="js/Personal.js" ></script>-->
+		<script src="js/margin.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">		
+			<div class="container clearfix">
+				<div class="logo">
+					
+				</div>
+				<div class="nav clearfix">
+				  <ul id="navtab">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">去处</a></li>
+					<li><a href="javascript:;">游记</a></li>
+					<li><a href="javascript:;">民宿</a></li>
+					<li><a href="javascript:;">商城</a></li>
+					<li><a href="javascript:;">服务</a></li>
+				  </ul>
+				   <div class="Btn">
+				   	  <input class="inpt_1" type="button" value="登录" />
+				      <input class="inpt_2" type="button" value="注册" />
+				   </div>				   
+				</div>
+			</div>
+			
+		</div>
+	    </div>
+	    <div class="search place_search">
+	        <p><strong id="adress">武汉</strong><span id="down"></span></p>
+	    	<input class="search_input_1" type="text" placeholder="朋友，来一场说走就走的旅行如何？" />
+	    	<input class="search_input_2" type="button" value="搜索" />
+	    </div>
+	     <div class="down-search place-down-search">
+	    	    	<ul>
+	    	    		<li>上海</li>
+	    	    		<li>深圳</li>
+	    	    		<li>大连</li>
+	    	    		<li>上海</li>
+	    	    		<li>深圳</li>
+	    	    		<li>大连</li>
+	    	    		<li>上海</li>
+	    	    		<li>深圳</li>
+	    	    		<li>大连</li>
+	    	    	</ul>
+	    	    </div>
+	    <div class="place-menu">
+	    	<div class="container">
+	    		<div class="place-menu-title">
+	    		  <div class="place-menu-1 place-menu-one m1">
+	    			<div class="title-1">主题  :</div>
+	    			<div class="place-menu-content">
+	    				<ul>
+	    					<li ><a class="slect-active all" href="#">不限</a></li>
+	    				    <li><a href="#">亲子游</a></li>
+	    				    <li><a href="#">情侣游</a></li>
+	    				    <li><a href="#">团体活动</a></li>
+	    				    <li><a href="#">会议活动</a></li>
+	    				    <li><a href="#">公司拓展</a></li>
+	    				</ul>
+	    			</div>
+	    		  </div>
+	    	
+	    		  <div class="place-menu-1 place-menu-two m1">
+	    			<div class="title-1">设施  :</div>
+	    			<div class="place-menu-content">
+	    				<ul>
+	    					<li ><a class="slect-active all" href="#">不限</a></li>
+	    				    <li><a href="#">停车场</a></li>
+	    				    <li><a href="#">餐饮</a></li>
+	    				    <li><a href="#">住宿</a></li>
+	    				    <li><a href="#">会议室</a></li>
+	    				    
+	    				</ul>
+	    			</div>
+	    		  </div>	
+	    		  <div class="place-menu-1 place-menu-three">
+	    			<div class="title-1">项目  :</div>
+	    			<div class="place-menu-content">
+	    				<ul>
+	    					<li ><a class="slect-active all" href="#">不限</a></li>
+	    				    <li><a href="#">采摘</a></li>
+	    				    <li><a href="#">烧烤</a></li>
+	    				    <li><a href="#">棋牌</a></li>
+	    				    <li><a href="#">攀岩</a></li>
+	    				    <li><a href="#">垂钓</a></li>
+	    				    <li><a href="#">桌球</a></li>
+	    				    <li><a href="#">KTV</a></li>
+	    				    <li><a href="#">真人CS</a></li>
+	    				    <li><a href="#">儿童乐园</a></li>
+	    				    <li><a href="#">农耕</a></li>
+	    				    <li><a href="#">真人CS</a></li>
+	    				    <li><a href="#">儿童乐园</a></li>
+	    				    <li><a href="#">农耕</a></li>
+	    				    
+	    				</ul>
+	    				
+	    			</div>
+	    			<div class="more">更多<span class="icon1_03"></span></div>
+	    		  </div>
+	    	    
+	    		  <div class="place-menu-1 place-menu-2 place-menu-four clearfix">
+	    			<div class="title-1">所选条件  :</div>
+	    			<div class="place-menu-content">
+	    				<ul class="slect clearfix">	    					
+	    				    <!--<li><a href="#">采摘  <span></span></a></li>	 
+	    				    <li><a href="#">烧烤   <span></span></a></li>	 
+	    				    <li><a href="#">真人CS <span></span></a></li>
+	    				    <li><a href="#">儿童乐园  <span></span></a></li>
+	    				    <li><a href="#">农耕  <span></span></a></li>-->
+	    				</ul>
+	    				
+	    			</div>
+	    			
+	    		  </div>
+	    		
+	    		  <div class="comprehensive">
+	    		  	 <ul class="clearfix">
+	    		  	 	<li class="active-compr"><a href="#">综合</a></li>
+	    		  	 	<li><a href="#">评价优先</a></li>
+	    		  	 	<li><a href="#">人气优先</a></li>
+	    		  	 	<li><a href="#">价格</a></li>
+	    		  	 </ul>
+	    		  </div>
+	    		</div>
+	    	</div>
+	    </div>
+	    
+	     <div class="town place-town" id="town">	    	
+	    	<div class="wrap">	    	
+	    	    <div class="recommend clearfix" id="pric">
+	    			<ul>
+	    				<li>
+	    					<img src="img/img1.png" />
+	    					<div class="message">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">1219.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img2.png" />
+	    					<div class="message message-2">
+	    						<h3>西游记公园省委大院标间</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">1239.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img3.png" />
+	    					<div class="message message-3">
+	    						<h3>西游记公园省委大院标间</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">1429.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img4.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">1229.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img5.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">12119.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img6.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">1209.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img7.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">1029.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img8.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">1290.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img9.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">14329.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img10.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">12249.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img11.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">12449.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    				<li>
+	    					<img src="img/img12.png" />
+	    					<div class="message message-2">
+	    						<h3>锦里沟景区住宿一晚</h3>
+	    						<p class="message-child"><span>4.3分</span>人均消费：￥<span class="pirce">12229.00</span></p>
+	    						<div class="message-hide">
+	    							<p>设施：<span>住宿</span><span>停车场</span><span>会议室</span></p>
+	    							<p>项目：
+	    								<span>采摘</span>
+	    								<span>KTV</span>
+	    								<span>垂钓</span>
+	    								<span>真人CS</span>
+	    								<span>攀岩</span>
+	    								<span>棋牌</span>
+	    								<span>桌球</span>
+	    								<span>漂流</span>
+	    								<span>儿童乐园</span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    				</li>
+	    			</ul>
+	    			
+	    		</div>
+	    	</div>
+	    	<ul class="prev-list-item clear">
+	    		<li><a href="javascript:;">上一页</a></li>
+	    		<li><a href="javascript:;">1</a></li>
+	    		<li><a href="javascript:;">2</a></li>
+	    		<li><a href="javascript:;">3</a></li>
+	    		<li><a href="javascript:;">4</a></li>
+	    		<li><a href="javascript:;">5</a></li>
+	    		<li style="background: #ffffff;border: none;"><a href="javascript:;" >...</a></li>
+	    		<li><a href="javascript:;">下一页</a></li>
+	    	</ul>
+	    </div>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	<footer class="place-foot">
+		<div class="container">
+			<ul class="Navigation clearfix">
+				<li><span></span><a href="#">移动版</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">加入我们</a></li>
+				<li><a href="#">用户协议</a></li>
+				<li><a href="#">商家服务</a></li>
+				<li><a href="#">用户中心</a></li>
+				<li><a href="#">联系我们</a></li>	
+				<span class="pull-right2"></span>
+				<span class="pull-right"></span>				
+			</ul>
+			<p class="p1"><span>鄂ICP备11017824号-4</span><span>Copyright © 2018 XXHYOU</span><span>湖北鑫兴禾科技有限公司</span><span>湖北省旅游协会会员单位</span></p>
+		    <p class="p2"><span>错误信息更改电话：027-56538658</span><span>更改邮箱 jubao@xxhy.com.cn</span><span>湖北省乡村振兴产业协会理事长单位</span></p>
+		</div>
+	</footer>
+	    
+	</body>
+</html>

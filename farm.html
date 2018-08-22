@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>农庄信息</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/order.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/margin.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">		
+			<div class="container clearfix">
+				<div class="logo">
+					
+				</div>
+				<div class="nav clearfix">
+				  <ul id="navtab">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">去处</a></li>
+					<li><a href="javascript:;">游记</a></li>
+					<li><a href="javascript:;">民宿</a></li>
+					<li><a href="javascript:;">商城</a></li>
+					<li><a href="javascript:;">服务</a></li>
+				  </ul>
+				   <div class="Btn">
+				   	  <input class="inpt_1" type="button" value="登录" />
+				      <input class="inpt_2" type="button" value="注册" />
+				   </div>				   
+				</div>
+			</div>			
+		</div>
+		<div class="FarmInformation">
+				<div class="container">
+					<div class="left">
+						<div class="left-farm clearfix">
+						<div class="personal clearfix">	    						    					    					
+	    					<div class="information">
+	    						<img src="img/personal.gif" />
+	    						<span class="farm_sp1">新华农庄<i class="badge"></i></span>
+	    						<span class="farm_sp2">湖北|武汉</span>
+	    						
+	    						<a href="#" class="focus">农庄认证</a>
+	    					</div>
+	    					
+	    				</div>
+					</div>
+					
+					    <ul class="farm-menu" id="farm-menu">
+					    	<li class="active-farm-menu">
+					    		<a href="#">农庄信息</a>
+					    		<input type="button" value="发布" id="farm-send"/>
+					    	</li>
+					    	<li>
+					    		<a href="#">定单管理</a>					    		
+					    	</li>
+					    	<li>
+					    		<a href="#">评价管理</a>					    	
+					    	</li>
+					    	<li>
+					    		<a href="#">入住信息</a>					    		
+					    	</li>
+					    	<li>
+					    		<a href="#">民宿管理</a>			
+					    	</li>
+					    	
+					    </ul>
+					
+					</div>
+				
+				    <div class="right farm-no">
+				    	<div class="farm_1">
+				    		<a >农庄信息</a>			    		
+				    		<a style="display: none;">订单管理</a>				    		
+				    		<a style="display: none;">评价管理</a>
+				    		<a style="display: none;">农庄入住申请</a>
+				    		<a></a>
+				    		<a style="display: none;">编辑农庄信息</a>
+				    		<!--<span></span>-->
+				    	</div>
+				    	
+				    	<div class="management tab_farm" >
+				    		<div class="management_img">
+				    			<img src="img/img12.png" />
+				    			<div class="management-message">
+	    						    <h3>锦里沟景区住宿一晚</h3>
+	    						    <p class="management-child"><span class="score">4.3分</span>人均消费：￥<span class="pirce">1219.00</span></p>	    						
+	    					    </div>
+				    		</div>
+				    	    <div class="management-menu">
+				    	    	<span>查看详情</span>
+				    	    	<span>编辑</span>
+				    	    	<span>删除</span>
+				    	    </div>
+				    	</div>
+				    	
+				    	
+				    	<div class="form tab_farm_2" style="display: none;">
+				    		<div class="form-group">
+				    			<label>农庄名称：</label>
+				    			<input type="text" />
+				    		</div>
+				    		<div class="form-group" id="text">
+				    			<label>农庄简介：</label>
+				    			<textarea></textarea>
+				    			<span class="number"><i>0</i>/300</span>
+				    		</div>
+				    		<div class="form-group">
+				    			<label>联系电话：</label>
+				    			<input type="text" />
+				    		</div>
+				    		<div class="form-group" id="limit">
+				    			<label>所在位置：</label>
+				    			<input type="text" />
+				    			<input type="text" />
+				    			<input type="text" />
+				    			<input type="text"  class="lin"/>
+				    			<div id="primary" class="limitid">
+				    				<ul>
+				    					<li>上海市</li>
+				    					<li>湖北省</li>
+				    					<li>广东省</li>
+				    					<li>四川省</li>
+				    				</ul>
+				    			</div>
+				    			<div id="city" class="limitid">
+				    				<ul>
+				    					<li>zz市</li>
+				    					<li>ss省</li>
+				    					<li>ss省</li>
+				    					<li>d川省</li>
+				    				</ul>
+				    			</div>
+				    			<div id="qu" class="limitid">
+				    				<ul>
+				    					<li>上s市</li>
+				    					<li>湖a省</li>
+				    					<li>广w省</li>
+				    					<li>四e省</li>
+				    				</ul>
+				    			</div>
+				    		</div>
+				    		<div class="form-group">
+				    			<label>人均消费：</label>
+				    			<input type="text" />  元
+				    		</div>
+				    		
+				    		<div class="map">
+				    			<img src="img/map.png" />
+				    			<span>地图标注</span>
+				    		</div>
+				    		
+                            <div class="form-group form-group-6">
+				    			<em>农庄设施：</em>
+				    			<span >停车场</span>
+				    			<span>住宿</span>
+				    			<span>餐饮</span>
+				    			<span>会议室</span>
+				    		</div>
+				    		<div class="form-group form-group-6">
+				    			<em>农庄项目：</em>
+				    			<span >垂钓</span>
+				    			<span >采摘</span>
+				    			<span>真人CS</span>
+				    			<span>KTV</span>
+				    			<span>攀岩</span>
+				    			<span>棋牌</span>
+				    			<span>儿童乐园</span>
+				    			<span>游泳</span>
+				    		</div>
+				    		<div class="form-group form-group-6">
+				    			<em>农庄特色：</em>
+				    			<span >自然风光</span>
+				    			<span>文化古镇</span>
+				    			<span>乡村别墅</span>
+				    			
+				    		</div>
+				    		<div class="form-group file-left clearfix">
+				    			<div class="clearfix">
+				    				<label>特色主图：</label>
+				    			    <a class="file">
+				    				    选择图片
+				    				    <input type="file" id="fileA"/>
+				    			    </a>
+				    			    <span id="fileAtext">建议尺寸：800*1022像素，小于800kb</span>	
+				    			</div>
+				    			<div class="picture-file clearfix">
+				    			<div id="fileAimg"><img src="img/ad1.png" /></div>
+				    			<span id="fileAdelete">删除图片</span>
+				    		    </div>
+				    		</div>
+				    		<div class="form-group file-left clearfix">
+				    			<div class="clearfix">
+				    				<label>精彩图集：</label>
+				    			    <a class="file">
+				    				    选择图片
+				    				    <input type="file" id="fileB"/>
+				    			    </a>
+				    			    <span id="fileBtext">建议尺寸：800*1022像素，小于800kb</span>	
+				    			</div>
+				    			<div class="picture-file clearfix group-im">
+				    				<a class="left" href="javascript:;" id="fileBleft"><</a>
+				    			      <div style="width: 675px;height: 125px;overflow: hidden;float: left;position: relative;">
+				    			      	<ul class="clearfix img-group" id="fileBimg">
+				    			      	<!--<li><img src="img/ad1.png" /></li>
+				    			      	<li><img src="img/ad1.png" /></li>
+				    			      	<li><img src="img/ad1.png" /></li>
+				    			      	<li><img src="img/ad1.png" /></li>
+				    			      	<li><img src="img/ad1.png" /></li>-->
+				    			      </ul>
+				    			      </div>
+				    			      <a class="right" href="javascript:;"id="fileBright">></a>
+				    			      <span id="fileBdelete">编辑</span>
+				    		    </div>
+				    		</div>
+				    	
+				    	    <div class="detail">
+				    	    	<div class="title2">
+				    	    		<p>项目详细信息  :</p>
+				    	    	</div>
+				    	    	<div class="detail-write" id="detail-write">
+				    	    		<div class="detail-home" id="detail-home">
+				    	    			<span id="dbtitle" >住宿</span>
+				    	    			<input type="text" id="dbtitle2"  value="住宿"/>
+				    	    			<i></i>
+				    	    		</div>
+				    	    		
+				    	    		<div id="addimg-1">
+				    	    			<input type="file" id="addimgimg" style="display: none;"/>
+				    	    			<img src="img/content3.gif" />
+				    	    			<i></i>
+				    	    		</div>
+				    	    		<div class="specialP">
+	    	    		                 <p>古典大床房，1.8*2M床一张，空调、麻将机、淋浴、独卫  12:00前退房   $299.00/晚</p>
+	    	    		                 <input type="text" id="specialP-text" />
+	    	    		                <i></i>
+	    	    	                </div>
+				    	    	</div>
+				    	    </div>
+				    	
+				    	    <div class="button-farm">
+				    	    	<ul class="clearfix">
+				    	    		<li id="addTitle"><a href="javascript:;">添加标题</a></li>
+				    	    		<li id="addimg"><a href="javascript:;">添加图片</a></li>
+				    	    		<li id="addbei"><a href="javascript:;">添加备注</a></li>
+				    	    		<li id="addvideo"><a href="javascript:;">添加视频</a></li>
+				    	    	</ul>
+				    	    </div>
+				    	
+				    	    <button class="btn1 activeBtn" type="button">确定提交</button>
+				    	    <button class="btn2" type="button">取消编辑</button>
+				    	</div>
+				   
+				        <div class="OrderQuery tab_farm"style="display: none;">
+				        	<ul>
+				        		<li class="clearfix">
+				        			<div class="query-left">
+				        				<img src="img/img1.png" />
+				        			</div>
+				        			<div class="query-center">
+				        				<ul class="clearfix">
+				        					<li>锦里沟景区住宿一晚</li>
+				        					<li>时间：2018-01-20</li>
+				        					<li>人数：5人</li>
+				        					<li>
+				        						标签：
+				        						<a href="">住宿</a>
+				        						<a href="">棋牌</a>
+				        						<a href="">采摘</a>
+				        						<a href="">真人cs</a>
+				        						<a href="">垂钓</a>
+				        					</li>
+				        				</ul>				        							        					
+				        			</div>
+				        		    <button type="button" class="btn-ok">订单确认</button>
+				        		</li>
+				        		<li class="clearfix">
+				        			<div class="query-left">
+				        				<img src="img/img1.png" />
+				        			</div>
+				        			<div class="query-center">
+				        				<ul class="clearfix">
+				        					<li>锦里沟景区住宿一晚</li>
+				        					<li>时间：2018-01-20</li>
+				        					<li>人数：5人</li>
+				        					<li>
+				        						标签：
+				        						<a href="">住宿</a>
+				        						<a href="">棋牌</a>
+				        						<a href="">采摘</a>
+				        						<a href="">真人cs</a>
+				        						<a href="">垂钓</a>
+				        					</li>
+				        				</ul>				        							        					
+				        			</div>
+				        		    <button type="button" class="btn-ok">订单确认</button>
+				        		</li>
+				        		<li class="clearfix">
+				        			<div class="query-left">
+				        				<img src="img/img1.png" />
+				        			</div>
+				        			<div class="query-center">
+				        				<ul class="clearfix">
+				        					<li>锦里沟景区住宿一晚</li>
+				        					<li>时间：2018-01-20</li>
+				        					<li>人数：5人</li>
+				        					<li>
+				        						标签：
+				        						<a href="">住宿</a>
+				        						<a href="">棋牌</a>
+				        						<a href="">采摘</a>
+				        						<a href="">真人cs</a>
+				        						<a href="">垂钓</a>
+				        					</li>
+				        				</ul>				        							        					
+				        			</div>
+				        		    <button type="button" class="btn-ok">订单确认</button>
+				        		</li>
+				        	</ul>
+				        </div>
+				    
+				        <div class="evaluate2 tab_farm" style="display: none;">
+				        	<ul class="clearfix">
+				        		<li>
+				        			<div class="line-eva">
+				        				<span class="line-eva-title">西游记公园省委大院标间</span>
+				        				<span class="line-eva-star"><img src="img/star_item_05.png"/> 2018-02-20 18:00:00</span>
+				        			</div>
+				        			<p class="line-eva-p">#位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同 #位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同#位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同</p>
+				        		    <ul class="line-eva-pai clearfix">
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    </ul>
+				        		   <div class="clearfix">
+				        		   	   <button type="button" class="line-eva-hui ">回复</button>
+				        		   </div>
+				        		   <div class="answer " style="display: none;">
+				        		   	<input type="text" name="" id="" value="" />
+				        		   	<a href="javascript:;">提交</a>
+				        		   </div>
+				        		</li>
+				        		<li>
+				        			<div class="line-eva">
+				        				<span class="line-eva-title">西游记公园省委大院标间</span>
+				        				<span class="line-eva-star"><img src="img/star_item_05.png"/> 2018-02-20 18:00:00</span>
+				        			</div>
+				        			<p class="line-eva-p">#位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同 #位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同#位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同</p>
+				        		    <ul class="line-eva-pai clearfix">
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    </ul>
+				        		   <div class="clearfix">
+				        		   	   <button type="button" class="line-eva-hui ">回复</button>
+				        		   </div>
+				        		   <div class="answer "style="display: none;">
+				        		   	<input type="text" name="" id="" value="" />
+				        		   	<a href="javascript:;">提交</a>
+				        		   </div>
+				        		</li>
+				        		<li>
+				        			<div class="line-eva">
+				        				<span class="line-eva-title">西游记公园省委大院标间</span>
+				        				<span class="line-eva-star"><img src="img/star_item_05.png"/> 2018-02-20 18:00:00</span>
+				        			</div>
+				        			<p class="line-eva-p">#位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同 #位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同#位置繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了。 但是。当我进了店。看到的却是与众不同</p>
+				        		    <ul class="line-eva-pai clearfix">
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    	<li><img src="img/ad2.png" /></li>
+				        		    </ul>
+				        		   <div class="clearfix" style="display: none;">
+				        		   	   <button type="button" class="line-eva-hui ">回复</button>
+				        		   </div>
+				        		   <div class="answer " style="display: none;">
+				        		   	<input type="text" name="" id="" value="" />
+				        		   	<a href="javascript:;">提交</a>
+				        		   </div>
+				        		   <div class="answer_user clearfix">
+				        		   	<span>商家回复</span>
+				        		   	<p class="answer-title">繁华##房间干净##性价比高##房间大##服务好#说真的在外面看到的时候我失望了</p>
+				        		   </div>
+				        		</li>
+				        	</ul>
+				        </div>
+				    
+				    
+				        <div class="Admissions tab_farm" style="display: none;">
+				        	<div class="form-group">
+				    			<label>农庄名称：</label>
+				    			<input type="text" />
+				    		</div>
+				    		<div class="form-group">
+				    			<label>农庄简介：</label>
+				    			<textarea></textarea>
+				    		</div>
+				    		<div class="form-group">
+				    			<label>联系电话：</label>
+				    			<input type="text" />
+				    		</div>
+				    		<div class="form-group">
+				    			<label>所在位置：</label>
+				    			<input type="text" />
+				    			<input type="text" />
+				    			<input type="text" />
+				    			<input type="text"  class="lin"/>
+				    		</div>
+				    		<div class="form-group">
+				    			<label>证件号码：</label>
+				    			<input type="text" style="width: 477px;"/>
+				    		</div>
+				    		<div class="form-group file-left clearfix">
+				    			<div class="clearfix">
+				    				<label>上传证照：</label>
+				    			    <a class="file">
+				    				    选择图片
+				    				    <input type="file" id="fileid"/>
+				    			    </a>
+				    			    <span >上传企业三证合一影印件，个人用户上传身份证正反面照片</span>	
+				    			</div>
+				    			<div class="picture-file clearfix">
+				    			<img src="img/ad1.png"/>				    			
+				    		    </div>
+				    		    <button type="button">确认提交</button>
+				    		</div>
+				    		
+				    		
+				    		<div class="submit clearfix">
+				    			<div class="circle"></div>
+				    			<span>您的申请已经提交，等待审核中...</span>
+				    			<span>审核大概有7个工作日左右，请耐心等待</span>
+				    		</div>
+				        </div>
+				    
+				    </div>
+				</div>
+			</div>
+	</body>
+</html>

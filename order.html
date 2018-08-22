@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/order.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/margin.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">		
+			<div class="container clearfix">
+				<div class="logo">
+					
+				</div>
+				<div class="nav clearfix">
+				  <ul id="navtab">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">去处</a></li>
+					<li><a href="javascript:;">游记</a></li>
+					<li><a href="javascript:;">民宿</a></li>
+					<li><a href="javascript:;">商城</a></li>
+					<li><a href="javascript:;">服务</a></li>
+				  </ul>
+				   <div class="Btn">
+				   	  <input class="inpt_1" type="button" value="登录" />
+				      <input class="inpt_2" type="button" value="注册" />
+				   </div>				   
+				</div>
+			</div>
+			
+		</div>
+		
+		 <div class="container-fluid banner-details">
+	    	<div class="ad-details">
+	    		<div class="line"></div>
+	    		<div class="l1 active-red">
+	    			<div class="circle c1">1</div>
+	    			<span>线上预订</span>
+	    		</div>
+	    		<div class="l2">
+	    			<div class="circle c2">2</div>
+	    			<span>商家确认</span>
+	    		</div>
+	    		<div class="l3">
+	    			<div class="circle c3">3</div>
+	    			<span>预订成功</span>
+	    		</div>
+	    		<div class="l4">
+	    			<div class="circle c4">4</div>
+	    			<span>评价山庄</span>
+	    		</div>
+	    		
+	    		
+	    		
+	    		
+	    	</div>
+	    </div>
+	    <div class="introduction clearfix">
+	    	<div class="container clearfix">
+	    		<div class="left-intro">
+	    			<img src="img/img1.png" />
+	    			<p>避暑夏游千年银杏谷</p>
+	    			<p>已有<span>13132</span>预约</p>
+	    		</div>
+	    		<div class="right-intro right-intro-order">
+	    			
+	    		    <div class="intro-select intro-order">
+	    		    	<ul class="intro-select-d intro-order-d">
+	    		    		<li>
+	    		    			<span class="intro-select-title">预约人数：</span>
+	    		    			<ul class="intro-select-dd intro-select-order order-number" id="order-people-number">
+	    		    			  <li class="active-number"><span>1</span></li>
+	    		    			  <li><span>2</span></li>
+	    		    			   <li><span>3</span></li>
+	    		    			    <li><span>4</span></li>
+	    		    			     <li><span>5</span></li>
+	    		    			      <li><span>6</span></li>
+	    		    			       <li><span>7</span></li>
+	    		    			        <li><span>8</span></li>
+	    		    			         <li><span>9</span></li>
+	    		    			          <li><span>10</span></li>
+	    		    			           <li><span>10~20</span></li>
+	    		    			            <li><span>20+</span></li>
+	    		    			</ul>	    		    			      		    			  
+	    		    		</li>
+	    		    		<li>
+	    		    			<span class="intro-select-title">
+	    		    				游玩时间：
+	    		    			</span>
+	    		    			<ul class="intro-select-dd intro-select-order order" id="order-data">
+	    		    			  <li class="active3">
+	    		    			  	<span>8.15</span>
+	    		    			  	<span>周六</span>
+	    		    			  </li>
+	    		    			  <li>
+	    		    			  	<span>8.16</span>
+	    		    			  	<span>周六</span>
+	    		    			  </li>
+	    		    			  <li>
+	    		    			  	<span>8.17</span>
+	    		    			  	<span>周六</span>
+	    		    			  </li>
+	    		    			  <li>
+	    		    			  	<span>8.18</span>
+	    		    			  	<span>周六</span>
+	    		    			  </li>
+	    		    			</ul>
+	    		    		</li>
+	    		    		
+	    		    		<li class="order2">
+	    		    			<span class="intro-select-title">关注项目：</span>
+	    		    			<div class="project clearfix" id="order-project">
+	    		    				<a  href="#">垂钓</a>
+	    		    				<a href="#">烧烤</a>
+	    		    				<a href="#">KTV</a>
+	    		    				<a href="#">真人CS</a>
+	    		    				<a href="#">攀岩</a>
+	    		    				<a href="#">桌球</a>
+	    		    				<a href="#">麻将</a>
+	    		    				<a href="#">儿童乐园</a>
+	    		    			</div>
+	    		    			
+	    		    		</li>
+	    		    		<li class="order2">
+	    		    			<span class="intro-select-title">联系人：</span>
+	    		    			<ul class="intro-select-dd intro-select-phone">
+	    		    			  <li>
+	    		    			  	<input type="text" class="name" placeholder="姓名" />
+	    		    			  </li>
+	    		    			  <li>
+	    		    			  	<input type="text" class="phone" placeholder="手机号码" id="phone"/>
+	    		    			  </li>
+	    		    			  
+	    		    			</ul>
+	    		    			
+	    		    		</li>
+	    		    	    <li><button type="button" class="right-intro-slect ok" id="btn_ok">确认</button></li>
+	    		    	</ul>
+	    		    </div>
+	    		    
+	    		</div>
+	    	</div>
+	    </div>
+	    <footer class="place-foot">
+		<div class="container">
+			<ul class="Navigation clearfix">
+				<li><span></span><a href="#">移动版</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">加入我们</a></li>
+				<li><a href="#">用户协议</a></li>
+				<li><a href="#">商家服务</a></li>
+				<li><a href="#">用户中心</a></li>
+				<li><a href="#">联系我们</a></li>	
+				<span class="pull-right2"></span>
+				<span class="pull-right"></span>				
+			</ul>
+			<p class="p1"><span>鄂ICP备11017824号-4</span><span>Copyright © 2018 XXHYOU</span><span>湖北鑫兴禾科技有限公司</span><span>湖北省旅游协会会员单位</span></p>
+		    <p class="p2"><span>错误信息更改电话：027-56538658</span><span>更改邮箱 jubao@xxhy.com.cn</span><span>湖北省乡村振兴产业协会理事长单位</span></p>
+		</div>
+	</footer>
+	</body>
+</html>

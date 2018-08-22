@@ -1,0 +1,137 @@
+
+.no-wrap{
+	overflow:hidden; /*//超出的文本隐藏*/
+
+    text-overflow:ellipsis; /*//溢出用省略号显示*/
+
+    white-space:nowrap; /*//溢出不换行*/
+    
+    
+}
+.no-n-wrap{
+	overflow:hidden; 
+
+    text-overflow:ellipsis;
+
+    display:-webkit-box; 
+
+    -webkit-box-orient:vertical;
+
+    -webkit-line-clamp:2; /*超出n行后以...代替*/
+    
+}
+
+/*css轮播左右箭头 下方为左箭头*/
+.preverous::before {
+    position: absolute;
+    left: 0;/*控制位置左右箭头*/
+    top: 50%;
+    width: 150%;
+    height: 2px;
+    background: #027938;
+    content: '';
+    transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    display: block;
+}
+.preverous::after {
+     position: absolute;
+    left: 0;
+    top: 50%;
+    width: 150%;
+    height: 2px;
+    background: #027938;
+    content: '';
+    transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    display: block;
+}
+
+
+/*进度线   width和height控制横向竖向*/
+.line{
+	 content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 10px;
+    width: 1px;
+    overflow: hidden;
+    height: 100%;
+    margin-left: 4px;
+    border-radius: 3px;
+    background-color: #e2e2e2;
+}
+  
+  
+ /* type=file上传文件的样式美化*/
+/*<a href="javascript:;" class="file">选择文件
+    <input type="file" name="" id="">
+</a>*/
+  .file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+} 
+
+/*做一个通知回复气泡框*/
+#title {
+			width: 150px;
+			border: 1px solid blue;
+			padding: 10px;
+			position: absolute;
+			left: 75px;
+			top: 30px;
+		}
+		
+		#title::after {
+			left: -18px;
+			top: 16px;
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 0;
+			border: 9px solid;
+			border-color: transparent transparent  #ffffff  transparent;/*border-color:上 右下左;控制四个三角的是否出现*/
+		}
+		
+		#title::before {
+			left: -20px;
+			top: 15px;
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 0;
+			border: 10px solid;
+			border-color: transparent transparent blue  transparent;
+		}
