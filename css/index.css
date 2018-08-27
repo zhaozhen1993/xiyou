@@ -32,6 +32,7 @@ body{
 
 .container-fluid{
 	width:100%;
+	min-width: 1280px;
 	overflow: hidden;
 }
 .header .container{
@@ -39,6 +40,7 @@ body{
 }
 .header{
 	width:100%;
+	min-width: 1280px;
 	height: 66px;
 	background: #2a2a2a;
 }
@@ -92,16 +94,19 @@ body{
 }
 
 .box{
+	
 	height: 450px;
 }
 .search{
-	width: 799px;
+	
+	width: 45%;
+	min-width: 779px;
 	height: 55px;
 	border: 1px solid #f4b548;
 	border-radius: 2px;
 	background: rgba(255,255,255,0.8);
 	position: absolute;
-	left: 551px;
+	left:25%;
 	top: 271px;
 	cursor: pointer;
 }
@@ -123,7 +128,7 @@ body{
 .search .search_input_1{
 	background: none;
 	height: 55px;
-	width: 490px;
+	max-width: 490px;
 	border: none;
 	outline: none;
 	color: #acacac;
@@ -152,7 +157,7 @@ body{
 	height: 192px;
 	background: rgba(255,255,255,0.9);
 	position: absolute;
-	left: 552px;
+	left: 25%;
 	top: 328px;
 	overflow: scroll;
 	z-index: 1111;
@@ -168,6 +173,7 @@ body{
 	position: relative;
 	width: 1960px;
 	height: 450px;
+	
 }
 .list{
 	position: absolute;
@@ -178,10 +184,13 @@ body{
 	float: left;
 	margin: 0 !important;
 }
+.list .list-item img{
+	width: auto;
+}
 .diamonds{
 	position: absolute;
 	top: 483px;
-	left: 814px;
+	left: 40%;
 	z-index: 11111;
 	
 }
@@ -545,10 +554,12 @@ footer .p2 span:nth-child(3){
 }
 .place-menu-title{}
 .place-menu-1{
+	overflow: hidden;
 	height: 56px;
 	margin: 0 15px;
 	line-height: 56px;
 	border-bottom: 1px solid #E8E8E8;
+	padding-left: 0;
 }
 .xxl{
 	height: 116px !important;
@@ -791,8 +802,13 @@ footer .p2 span:nth-child(3){
 
 .intro-select-d li{
 	line-height: 55px;
+	#line-height:25px;
+	_line-height:25px;
 	height: 55px;
 	display: block;
+}
+.last-li{
+	
 }
 .intro-select-d span{
 	font-size: 12px;
