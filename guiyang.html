@@ -2,8 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
 		<title></title>
 		<link rel="stylesheet" href="css/guizhou.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
+		<!--<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>-->
+		<script type="text/javascript" src="js/highcharts.js" ></script>
+		<script type="text/javascript" src="js/echarts.common.min.js" ></script>
 		<script type="text/javascript" src="js/canvas.js" ></script>
 	</head>
 	<body>
@@ -22,7 +27,7 @@
 								<img src="img/guiyang/1.gif" />
 								<span class="t">26吨/亩</span>
 								<div class="canvas-1">
-									<span class="number1">32%</span>
+									<span class="number1">21%</span>
 									<canvas class="bg1" id="bg1" width="75" height="75"></canvas>
 									<span class="t2">节水</span>
 									<!--<canvas class="bg2" id="bg2" width="75" height="75"></canvas>-->
@@ -33,7 +38,7 @@
 								<img src="img/guiyang/2.gif" />
 								<span class="t">26吨/亩</span>
 								<div class="canvas-1">
-									<span class="number2">32%</span>
+									<span class="number2">33%</span>
 									<canvas class="bg" id="bg2" width="75" height="75"></canvas>
 									<span class="t2">节水</span>
 								</div>
@@ -43,7 +48,7 @@
 								<img src="img/guiyang/3.gif" />
 								<span class="t">26吨/亩</span>
 								<div class="canvas-1">
-									<span class="number3">32%</span>
+									<span class="number3">25%</span>
 									<canvas class="bg" id="bg3" width="75" height="75"></canvas>
 									<span class="t2">节水</span>
 								</div>
@@ -56,18 +61,19 @@
 				</div>
 				<div class="right_v">
 					<div class="vedio-bg">
-						<video></video>
+						<img src="img/guiyang/video.png"/>
+						
 					</div>
 					<ul class="clearfix">
-						<li><a href="javascript:;">1</a></li>
-						<li><a href="javascript:;">2</a></li>
-						<li><a href="javascript:;">3</a></li>
-						<li><a href="javascript:;">4</a></li>
-						<li><a href="javascript:;">5</a></li>
-						<li><a href="javascript:;">6</a></li>
-						<li><a href="javascript:;">7</a></li>
-						<li><a href="javascript:;">8</a></li>
-						<li><a href="javascript:;">9</a></li>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
 					</ul>
 				</div>
 			</div>
@@ -80,14 +86,35 @@
 		    		<li><a href="javascript:;">病虫害</a></li>
 		    	</ul>
 		    	<div class="consurl">
-		    		<ul class="consurl-list">
-		    			<li></li>
-		    			<li></li>
-		    			<li></li>
-		    			<li></li>
+		    		<ul class="consurl-list" >
+		    			<li>
+							<div id="containerLine1" style="height:320px">2</div>
+						</li>
+						<li>
+							<div id="containerLine2" style="height:320px">3</div>
+						</li>
+						<li>
+							<div id="containerLine3" style="height:320px">4</div>
+						</li>
+						<li>
+							<div id="containerLine4" style="height:320px">5</div>
+						</li>
+
 		    		</ul>
 		    	</div>
+		    	<ul class="consurl2">
+		    		<li class="active">时</li>
+		    		<li>日</li>
+		    		<li>月</li>
+		    	</ul>
 		    </div>
 		</div>
+		
+		
+		
+		
+		 
+       
+   
 	</body>
 </html>

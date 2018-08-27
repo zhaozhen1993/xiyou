@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 0; outline: none;}
 a{
 	text-decoration: none;
 }
@@ -87,6 +90,10 @@ em{
 .col-3{
 	width: 33.33%;
 }
+.col-3 img{
+	width: 79px;
+	height: 25px;
+}
 .canvas-1{
 	width: 75px;
 	height: 75px;
@@ -127,14 +134,17 @@ canvas{
 }
 .vedio-bg{
 	float: right;
-	margin-top: 70px;
+	/*margin-top: 70px;*/
 	margin-right: 56px;
 	width: 87%;
 	height: 100%;
-	background: url(../img/guiyang/video.png) no-repeat;
-	background-size:cover;
+	
 	margin-bottom: 25px;
 	display: block;
+}
+.vedio-bg img{
+	width: 100%;
+	height: auto;
 }
 .right_v ul{
 	margin-left: 25px;
@@ -151,9 +161,10 @@ canvas{
 	border: 1px solid #2a4580;
 	box-shadow: 0 0 10px .2px #29447f;
 	cursor: pointer;
+	color: #4d536d;
 }
 .right_v li a{
-	color: #4d536d;
+	
 }
 .right_v li:hover{
 	background: #1b2d5d;
@@ -165,6 +176,7 @@ canvas{
 	top: -105px;
 	position: absolute;
 	margin-left: 56px;
+	min-width: 636px;
 }
 .footer .t-li>li{
 	float: left;
@@ -183,7 +195,7 @@ canvas{
 	color: #b3b9d1;
 }
 .consurl{
-	width: 1810px;
+	max-width: 1810px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -197,4 +209,23 @@ canvas{
 	float: left;
 	border:1px solid #2b4681;
 	box-shadow: 0 0 10px .2px #29447f;
+}
+
+.consurl2{
+	position: absolute;
+	right: 55px;
+	top: -35px;
+}
+.consurl2 li{
+	float: left;
+	width: 43px;
+	height: 34px;
+	border:1px solid #2b4681;
+	line-height: 34px;
+	text-align: center;
+	color: #b3b9d1;
+	cursor: pointer;
+}
+.active{
+	background: #1a347a;
 }
