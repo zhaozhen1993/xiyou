@@ -16,16 +16,22 @@ window.onload=function(){
 //	ogc.stroke();
 var hasload=0;
 var i=0;
-draw("bg1",21,"#29a0dc")
-draw("bg2",33,"#c0863a")
-draw("bg3",25,"#18b078")
+draw("bg1",".number1",50,"#29a0dc");
+draw("bg2",".number2",33,"#c0863a");
+draw("bg3",".number3",25,"#18b078");
 
-function draw(a,c,d){
+function draw(a,b,c,d){
 	var oc=document.getElementById(a);
+   
 	var ogc=oc.getContext('2d');
 //	var n=oc.getElementsByClassName(b);
-	
+//	var $num=$(b);
 //	n.innerHTML=hasload+"%";
+   
+   
+    	
+    	$(b).eq(0).text(hasload+'%')
+   
 	var load=hasload*2/100*Math.PI;
 	var x=37.5;
 	var y=37.5;
@@ -45,19 +51,22 @@ function draw(a,c,d){
 	ogc.strokeStyle=d;
 	ogc.stroke();
 	bg(c);
+	
+	
   function bg(c){
 	
 	
 	drawtimer=setInterval(function(){
-		if(i<+c){
-			draw(a,c,d)
+		if(i<=c){
+			draw(a,b,c,d)
 			i++;
 			hasload+=1;
 			
 		}else{
 			clearInterval(drawtimer);
+			
 		}
-	},400)
+	},100)
    }
 }
 
@@ -193,7 +202,14 @@ function draw(a,c,d){
 
 
 
-
+            $('.t-li').find('li').click(function(){
+            	 
+            	$(this).css('background','#1a347a').siblings().css('background','');
+            	$('.consurl-list').animate({
+            		left:-$('.consurl-list li').eq(0).width()* $(this).index()
+            	},500)
+            	
+            })
 
 
 }
